@@ -1,0 +1,57 @@
+.softskills {
+    width: 100%;
+    /*display: none;*/
+}
+
+.content {
+    width: 100%;
+    display: block;
+}
+
+.bio-header {
+    text-align: center;
+}
+
+.timeline {
+    width: 100%;
+    /*padding-bottom: 20px;*/
+    &::before {
+        display: none;
+    }
+}
+
+.timeline-item {
+    margin: auto;
+    &::before, &::after {
+        display: none;
+    }
+    &:last-of-type {
+        margin-bottom: 100px;
+    }
+}
+
+.timeline-item-info {
+    position: static;
+    visibility: visible;
+    transform: translateX(0px) scaleX(100%);
+    opacity: 1;
+    margin: auto auto 10px auto;
+    width: inherit;
+    border-radius: 50px 0 50px;
+}
+
+.softskills {
+    font-size: 0.75em;
+}
+
+.softskill-item {
+    grid-template-columns: 1fr 2fr;
+}
+
+.softskill-item-name {
+    font-size: 1.5em;
+}
+
+.softskills-progressbar-placeholder {
+    width: 100%;
+}
